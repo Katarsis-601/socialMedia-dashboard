@@ -29,8 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [not-yet]()
-- Live Site URL: [not-yet]()
+- Live Site URL: [Click-Here](https://andrian-w.github.io/socialMedia-dashboard/)
 
 ## My process
 

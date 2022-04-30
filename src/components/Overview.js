@@ -8,6 +8,7 @@ import youtube_icon from "../images/icon-youtube.svg";
 import twitter_icon from "../images/icon-twitter.svg";
 export default function Overview() {
   return (
+    <>
     <div className="overview">
       <CardOverview>
         <div className="overview-header">
@@ -114,5 +115,15 @@ export default function Overview() {
         </div>
       </CardOverview>
     </div>
+      <div class="attribution">
+        Challenge by{" "}
+        <LinkText
+          link="https://www.frontendmentor.io?ref=challenge"
+          children="Frontend Mentor"
+        />
+        . Coded by{" "}
+        <LinkText link="https://github.com/Andrian-W" children="Andrian-W" />.
+      </div>  
+</>
   );
 }

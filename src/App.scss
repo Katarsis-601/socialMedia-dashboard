@@ -5,6 +5,10 @@ $text-child: hsl(228, 12%, 44%);
 body {
   font-family: Inter;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 .App {
   height: 200px;
   display: flex;
@@ -166,7 +170,6 @@ header {
     align-items: center;
   }
 }
-
 .attribution {
   text-align: center;
 }

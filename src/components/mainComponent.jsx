@@ -89,6 +89,34 @@ export function FollowText(props) {
     </p>
   );
 }
+export function OverviewText(props) {
+  const theme = useContext(themeContext);
+  const overvieWText = useRef(null);
+  useEffect(() => {
+    const themeDark = () => {
+      if (theme.dark === true) {
+        overvieWText.current.style.color = "white";
+      } else {
+        overvieWText.current.style.color = " hsl(228, 12%, 44%)";
+      }
+    };
+    themeDark();
+  }, [theme.dark]);
+  return (
+    <p
+      ref={overvieWText}
+      className="follow-text"
+      style={{
+        fontWeight: "700",
+        fontSize: "20px",
+        marginBottom: "10px",
+        marginTop: "15px",
+      }}
+    >
+      {props.children}
+    </p>
+  );
+}
 
 export function TotalText(props) {
   const theme = useContext(themeContext);
@@ -119,7 +147,6 @@ export function TotalText(props) {
   );
 }
 
-
 export function LinkText(props) {
   const theme = useContext(themeContext);
   const linkText = useRef(null);
@@ -139,4 +166,3 @@ export function LinkText(props) {
     </a>
   );
 }
-

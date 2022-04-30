@@ -118,3 +118,25 @@ export function TotalText(props) {
     </p>
   );
 }
+
+
+export function LinkText(props) {
+  const theme = useContext(themeContext);
+  const linkText = useRef(null);
+  useEffect(() => {
+    const themeDark = () => {
+      if (theme.dark === true) {
+        linkText.current.style.color = "white";
+      } else {
+        linkText.current.style.color = "hsl(230, 17%, 14%)";
+      }
+    };
+    themeDark();
+  }, [theme.dark]);
+  return (
+    <a ref={linkText} target="_blank" rel="noreferrer" href={props.link}>
+      {props.children}
+    </a>
+  );
+}
+

@@ -1,4 +1,4 @@
-import { CardOverview, FollowText } from "./mainComponent";
+import { CardOverview, FollowText, LinkText } from "./mainComponent";
 import iconDown from "../images/icon-down.svg";
 import iconUp from "../images/icon-up.svg";
 
